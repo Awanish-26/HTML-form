@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <title>Title</title>
+  <title>Bootstrap Form</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -23,33 +23,81 @@
       <div class="collapse navbar-collapse" id="collapsibleNavId">
         <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" href="#" aria-current="page">Home <span class="visually-hidden">(current)</span></a>
+            <a class="nav-link active" href="payment-form.html" aria-current="page">Home <span class="visually-hidden">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          
+          </li>        
       </div>
     </div>
   </nav>
   
 
-  <div class="container-fluid text-white mt-3 px-5 py-5 w-75 border border-secondary-subtle rounded" style="background: #303030;">
+  <div class="container-fluid text-white mt-3 px-sm-5 px-5 py-5 w-75 border border-secondary-subtle rounded" style="background: #303030;">
+
+    <h1 class="text-center text-success">Payment-Form</h1>
+    <hr style="color: aqua;">
+
     <form class="px-5">
       <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Email address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        <label for="Name1" class="form-label">Name</label>
+        <input class="form-control" type="text" placeholder="Default input" id="Name1">
       </div>
+
+      <div class="mb-3">
+        <label for="gender" class="form-label">Gender</label>
+        <select class="form-control" id="gender">
+          <option selected> --Select Gender--</option>
+          <option>Male</option>
+          <option>Female</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label for="Address" class="form-label">Address</label>
+        <textarea class="form-control" id="Address" rows="1"></textarea>
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="We'll never share your email with anyone else.">
+      </div>
+
       <div class="mb-3">
         <label for="exampleInputPassword1" class="form-label">Password</label>
         <input type="password" class="form-control" id="exampleInputPassword1">
       </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
+      
+    <hr>
+    <h2 class="text-info">Payment Information</h2>
+
+    <div class="mb-3">
+      <label for="card_type" class="form-label">Card Type</label>
+      <select class="form-control" id="card_type">
+        <option selected> --Select Card Type--</option>
+        <option value="visa">Visa</option>
+        <option value="rupay">Rupay</option>
+        <option value="mastercard">Mastercard</option>
+      </select>
+    </div>
+
+    <div class="mb-3">
+      <label for="card_number" class="form-label">Card Number</label>
+      <input type="number" class="form-control" id="card_number">
+    </div>
+
+    <div class="mb-3">
+      <label for="Exp_date" class="form-label">Expiration Date</label>
+      <input class="form-control" type="date" id="Exp_date">
+    </div>
+
+    <div class="mb-5">
+      <label for="cvv" class="form-label">CVV</label>
+      <input type="password" class="form-control" id="cvv">
+    </div>
+    <button type="submit" class="btn btn-primary w-100">Submit</button>
     </form>
+    
   </div>
 
 
